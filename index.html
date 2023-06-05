@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Chakra+Petch:wght@700&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <title>Score Board</title>
+</head>
+<body style="background-image:url(img/bgimg.png);">
+  <div class=" w-96 max-h-max mx-auto bg-fixed rounded-xl " style="background-image: url(img/bg.png)"> 
+    <div class="grid grid-cols-3 w-96 max-h-max mx-auto mt-16 rounded-xl bg-zinc-400 bg-opacity-50">
+
+        <div class="my-5 col-span-3 mx-auto text-5xl font-bold font-cairo">Score Board</div>
+
+        <div class="grid col-span-3 grid-cols-9 h-10">
+            <div class="col-span-1"></div>
+            <div class="flex justify-center items-center col-span-3 text-zinc-900 bg-zinc-300 text-center text-2xl font-bold rounded-md font-cairo">Home</div>
+            <div class="col-span-1"></div>
+            <div class="flex justify-center items-center col-span-3 text-zinc-900 bg-zinc-300 text-center text-2xl font-bold rounded-md font-cairo">Away</div>
+            <div class="col-span-1"></div>
+        </div>
+
+        <div class="grid col-span-3 grid-cols-9 h-28 mt-3">
+            <div class="col-span-1"></div>
+            <div id="home" class=" flex justify-center items-center col-span-3 bg-zinc-500 text-7xl rounded-md font-chakra text-zinc-100">0</div>
+            <div class="col-span-1"></div>
+            <div id="away" class="flex justify-center items-center col-span-3 bg-zinc-500 text-7xl rounded-md font-chakra text-zinc-100">0</div>
+            <div class="col-span-1"></div>
+        </div>
+
+        <div class="grid col-span-3 grid-cols-9 h-10 mt-3">
+            <div class="col-span-1"></div>
+            <button onclick="homeOne()" class="flex justify-center items-center col-span-1 bg-red-200 rounded-full text-center font-bold">+1</button>
+            <button onclick="homeTwo()" class="flex justify-center items-center col-span-1 bg-yellow-300 rounded-full text-center font-bold">+2</button>
+            <button onclick="homeThree()" class="flex justify-center items-center col-span-1 bg-lime-300 rounded-full text-center font-bold">+3</button>
+            <div class="col-span-1"></div>
+            <button onclick="awayOne()" class="flex justify-center items-center col-span-1 bg-red-200  rounded-full text-center font-bold">+1</button>
+            <button onclick="awayTwo()" class="flex justify-center items-center col-span-1 bg-yellow-300 rounded-full text-center font-bold">+2</button>
+            <button onclick="awayThree()" class="flex justify-center items-center col-span-1 max-w-full max-h-full bg-lime-300 rounded-full text-center font-bold">+3</button>
+            <div class="col-span-1"></div>
+        </div>
+
+        <div class="col-span-1"></div>
+        <button onclick="resetScore()" class="flex justify-center items-center w-32 h-10 my-5 col-span-1 mx-auto text-2xl font-bold text-zinc-900 bg-zinc-300 rounded-md font-cairo">Reset</button>
+        <div class="col-span-1"></div>
+
+    </div>
+  </div> 
+
+  <script src="script.js"></script>
+</body>
+</html>
