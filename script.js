@@ -35,8 +35,13 @@ function awayThree() {
 }
 
 function resetScore() {
+    let konfirmasi = confirm('Reset Score Board?');
+
+    if(konfirmasi === true) {
+
     homeScore.textContent = 0
     awayScore.textContent = 0
     countHome = 0
     countAway = 0
+}else {}
 }
